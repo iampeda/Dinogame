@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8-bit Dino Runner</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
+</head>
+<body>
+    <div id="game-container">
+        <div id="menu-screen">
+            <h1>8-bit Dino Runner</h1>
+            <button id="start-btn">Start Game</button>
+            <button id="leaderboard-btn">Leaderboard</button>
+            <button id="quit-btn">Quit Game</button>
+        </div>
+        <div id="leaderboard-screen" style="display: none;">
+            <h1>Leaderboard</h1>
+            <ol id="leaderboard-list"></ol>
+            <button id="back-to-menu-btn">Back to Menu</button>
+        </div>
+        <canvas id="game-canvas"></canvas>
+        <div id="name-save-screen" style="display: none;">
+            <h1>Enter Your Name</h1>
+            <input type="text" id="name-input" placeholder="Your Name">
+            <button id="name-ok-btn">OK</button>
+        </div>
+        <div id="game-over-screen" style="display: none;">
+            <h1>Game Over</h1>
+            <p>Final Score: <span id="final-score">0</span></p>
+            <h2>Top 5 Scores:</h2>
+            <ol id="top-scores"></ol>
+            <button id="restart-btn">Restart Game</button>
+            <button id="quit-game-btn">Quit Game</button>
+        </div>
+        <div id="score-display">Score: 0</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
